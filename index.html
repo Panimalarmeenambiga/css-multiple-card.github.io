@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="jean.jpg" alt="Denim Jeans" style="width:100%">
+     <h1>Tailored Jeans</h1>
+  <p class="price">Rs.599</p>
+  <p> Jeans are a timeless and versatile wardrobe staple, offering both style and durability. They've evolved from workwear to a fashion icon, and there's a pair of jeans out there for everyone, with various fits, washes, and styles available. While jeans are most commonly made from denim.</p>
+  <p><button style="background-color: black;color: #f1f1f1;">Add to Cart</button></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="shirt.jpg" alt="shirts" style="width:100%">
+     <h1>Casual Shirts</h1>
+  <p class="price">Rs.499</p>
+  <p>Shirts are versatile garments for the upper body, available in numerous styles, fabrics, and designs.They can be casual or formal, ranging from simple T-shirts to dress shirts and blouses.A shirt is a garment for the upper body, typically with sleeves, a collar, and a front opening.</p>
+  <p><button style="background-color: black;color: #f1f1f1;">Add to Cart</button></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+     <img src="saree.jpg" alt="tissue saree" style="width:100%">
+     <h1>Tissue Saree</h1>
+  <p class="price">Rs.999</p>
+  <p>Sarees are a traditional garment in South Asia, particularly in India, consisting of a length of unstitched fabric, typically 5 to 9 yards long, draped elegantly around the body.The saree is a traditional Indian garment, a long, unstitched piece of fabric typically worn by women.</p>
+  <p><button style="background-color: black;color: #f1f1f1;">Add to Cart</button></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="kurti.jpg" alt="straight kurti" style="width:100%">
+     <h1>Straight Kurti</h1>
+  <p class="price">Rs.799</p>
+  <p>A kurti is a versatile and comfortable garment, traditionally a short kurta, often worn by women in South Asia. It's a popular choice for both casual and semi-formal occasions due to its comfort and diverse styles. It's a comfortable and fashionable choice for various occasions.</p>
+  <p><button style="background-color: black;color: #f1f1f1;">Add to Cart</button></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
